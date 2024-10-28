@@ -1,0 +1,2891 @@
+{
+	"info": {
+		"_postman_id": "15b8656a-3f1b-4e50-ba0e-13fbd14e1e6b",
+		"name": "Async Microservices Account System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12232219"
+	},
+	"item": [
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "Save Client 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identification\": \"1234567890\",\r\n    \"name\": \"Jose Lema\",\r\n    \"gender\": \"M\",\r\n    \"age\": 30,\r\n    \"address\": \"Otavalo sn y principal\",\r\n    \"phone\": \"098254785\",\r\n    \"password\": \"1234\",\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Client 1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"identification\": \"1234567890\",\r\n    \"name\": \"Jose Lema\",\r\n    \"gender\": \"M\",\r\n    \"age\": 30,\r\n    \"address\": \"Otavalo sn y principal\",\r\n    \"phone\": \"098254785\",\r\n    \"password\": \"1234\",\r\n    \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:24:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identification\": \"1234567890\",\n    \"name\": \"Jose Lema\",\n    \"gender\": \"M\",\n    \"age\": 30,\n    \"address\": \"Otavalo sn y principal\",\n    \"phone\": \"098254785\",\n    \"clientId\": 1,\n    \"password\": \"1234\",\n    \"status\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Client 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identification\": \"1234567891\",\r\n    \"name\": \"Marianela Montalvo\",\r\n    \"gender\": \"F\",\r\n    \"age\": 25,\r\n    \"address\": \"Amazonas y NNUU\",\r\n    \"phone\": \"097548965\",\r\n    \"password\": \"5678\",\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Client 2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"identification\": \"1234567891\",\r\n    \"name\": \"Marianela Montalvo\",\r\n    \"gender\": \"F\",\r\n    \"age\": 25,\r\n    \"address\": \"Amazonas y NNUU\",\r\n    \"phone\": \"097548965\",\r\n    \"password\": \"5678\",\r\n    \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:27:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identification\": \"1234567891\",\n    \"name\": \"Marianela Montalvo\",\n    \"gender\": \"F\",\n    \"age\": 25,\n    \"address\": \"Amazonas y NNUU\",\n    \"phone\": \"097548965\",\n    \"clientId\": 2,\n    \"password\": \"5678\",\n    \"status\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Client 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identification\": \"1234567892\",\r\n    \"name\": \"Juan Osorio\",\r\n    \"gender\": \"M\",\r\n    \"age\": 53,\r\n    \"address\": \"13 junio y Equinoccial\",\r\n    \"phone\": \"098874587\",\r\n    \"password\": \"1245\",\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Client 3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"identification\": \"1234567892\",\r\n    \"name\": \"Juan Osorio\",\r\n    \"gender\": \"M\",\r\n    \"age\": 53,\r\n    \"address\": \"13 junio y Equinoccial\",\r\n    \"phone\": \"098874587\",\r\n    \"password\": \"1245\",\r\n    \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:27:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identification\": \"1234567892\",\n    \"name\": \"Juan Osorio\",\n    \"gender\": \"M\",\n    \"age\": 53,\n    \"address\": \"13 junio y Equinoccial\",\n    \"phone\": \"098874587\",\n    \"clientId\": 3,\n    \"password\": \"1245\",\n    \"status\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Client 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identification\": \"1234567893\",\r\n    \"name\": \"Eduardo Reyes\",\r\n    \"gender\": \"M\",\r\n    \"age\": 31,\r\n    \"address\": \"Ponceano Alto\",\r\n    \"phone\": \"098874588\",\r\n    \"password\": \"4567\",\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Client 4",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"identification\": \"1234567893\",\r\n    \"name\": \"Eduardo Reyes\",\r\n    \"gender\": \"M\",\r\n    \"age\": 31,\r\n    \"address\": \"Ponceano Alto\",\r\n    \"phone\": \"098874588\",\r\n    \"password\": \"4567\",\r\n    \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:33:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identification\": \"1234567893\",\n    \"name\": \"Eduardo Reyes\",\n    \"gender\": \"M\",\n    \"age\": 31,\n    \"address\": \"Ponceano Alto\",\n    \"phone\": \"098874588\",\n    \"clientId\": 4,\n    \"password\": \"4567\",\n    \"status\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Client 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identification\": \"1234567894\",\r\n    \"name\": \"Diana Cabrera\",\r\n    \"gender\": \"F\",\r\n    \"age\": 28,\r\n    \"address\": \"Sector Einstein\",\r\n    \"phone\": \"098874588\",\r\n    \"password\": \"4567\",\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Client 5",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"identification\": \"1234567894\",\r\n    \"name\": \"Diana Cabrera\",\r\n    \"gender\": \"F\",\r\n    \"age\": 28,\r\n    \"address\": \"Sector Einstein\",\r\n    \"phone\": \"098874588\",\r\n    \"password\": \"4567\",\r\n    \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Oct 2024 17:16:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identification\": \"1234567894\",\n    \"name\": \"Diana Cabrera\",\n    \"gender\": \"F\",\n    \"age\": 28,\n    \"address\": \"Sector Einstein\",\n    \"phone\": \"098874588\",\n    \"clientId\": 6,\n    \"password\": \"4567\",\n    \"status\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Clients",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:29:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"identification\": \"1234567890\",\n        \"name\": \"Jose Lema\",\n        \"gender\": \"M\",\n        \"age\": 30,\n        \"address\": \"Otavalo sn y principal\",\n        \"phone\": \"098254785\",\n        \"clientId\": 1,\n        \"password\": \"1234\",\n        \"status\": true\n    },\n    {\n        \"identification\": \"1234567891\",\n        \"name\": \"Marianela Montalvo\",\n        \"gender\": \"F\",\n        \"age\": 25,\n        \"address\": \"Amazonas y NNUU\",\n        \"phone\": \"097548965\",\n        \"clientId\": 2,\n        \"password\": \"5678\",\n        \"status\": true\n    },\n    {\n        \"identification\": \"1234567892\",\n        \"name\": \"Juan Osorio\",\n        \"gender\": \"M\",\n        \"age\": 53,\n        \"address\": \"13 junio y Equinoccial\",\n        \"phone\": \"098874587\",\n        \"clientId\": 3,\n        \"password\": \"1245\",\n        \"status\": true\n    },\n    {\n        \"identification\": \"1234567893\",\n        \"name\": \"Eduardo Reyes\",\n        \"gender\": \"M\",\n        \"age\": 31,\n        \"address\": \"Ponceano Alto\",\n        \"phone\": \"098874588\",\n        \"clientId\": 4,\n        \"password\": \"4567\",\n        \"status\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Client by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/clientes/1234567890",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clientes",
+								"1234567890"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Client by Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/clientes/1234567890",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clientes",
+										"1234567890"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:30:14 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identification\": \"1234567890\",\n    \"name\": \"Jose Lema\",\n    \"gender\": \"M\",\n    \"age\": 30,\n    \"address\": \"Otavalo sn y principal\",\n    \"phone\": \"098254785\",\n    \"clientId\": 1,\n    \"password\": \"1234\",\n    \"status\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Client 4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identification\": \"1234567893\",\r\n    \"name\": \"Eduardo Reyes\",\r\n    \"gender\": \"M\",\r\n    \"age\": 31,\r\n    \"address\": \"Ponceano Alto y Diego Vásquez de Cepeda\",\r\n    \"phone\": \"098874000\",\r\n    \"clientId\": 4,\r\n    \"password\": \"4567\",\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/clientes/1234567893",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clientes",
+								"1234567893"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Client 4",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"identification\": \"1234567893\",\r\n    \"name\": \"Eduardo Reyes\",\r\n    \"gender\": \"M\",\r\n    \"age\": 31,\r\n    \"address\": \"Ponceano Alto y Diego Vásquez de Cepeda\",\r\n    \"phone\": \"098874000\",\r\n    \"clientId\": 4,\r\n    \"password\": \"4567\",\r\n    \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/clientes/1234567893",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clientes",
+										"1234567893"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:31:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identification\": \"1234567893\",\n    \"name\": \"Eduardo Reyes\",\n    \"gender\": \"M\",\n    \"age\": 31,\n    \"address\": \"Ponceano Alto y Diego Vásquez de Cepeda\",\n    \"phone\": \"098874000\",\n    \"clientId\": 4,\n    \"password\": \"4567\",\n    \"status\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Client 4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/clientes/1234567893",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clientes",
+								"1234567893"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Client 4",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/clientes/1234567893",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clientes",
+										"1234567893"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:32:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Save Account 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"478758\",\r\n    \"accountType\": \"Ahorros\",\r\n    \"initialBalance\": 2000.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Account 1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"478758\",\r\n    \"accountType\": \"Ahorros\",\r\n    \"initialBalance\": 2000.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567890\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/cuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:35:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountNumber\": \"478758\",\n    \"accountType\": \"Ahorros\",\n    \"initialBalance\": 2000,\n    \"status\": true,\n    \"clientId\": \"1234567890\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Account 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"225487\",\r\n    \"accountType\": \"Corriente\",\r\n    \"initialBalance\": 100.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567891\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Account 2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"225487\",\r\n    \"accountType\": \"Corriente\",\r\n    \"initialBalance\": 100.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567891\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/cuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:35:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountNumber\": \"225487\",\n    \"accountType\": \"Corriente\",\n    \"initialBalance\": 100,\n    \"status\": true,\n    \"clientId\": \"1234567891\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Account 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"495878\",\r\n    \"accountType\": \"Ahorros\",\r\n    \"initialBalance\": 100.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567892\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Account 3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"495878\",\r\n    \"accountType\": \"Ahorros\",\r\n    \"initialBalance\": 100.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567892\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/cuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:36:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountNumber\": \"495878\",\n    \"accountType\": \"Ahorros\",\n    \"initialBalance\": 100,\n    \"status\": true,\n    \"clientId\": \"1234567892\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Account 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"496825\",\r\n    \"accountType\": \"Ahorros\",\r\n    \"initialBalance\": 540.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567891\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Account 4",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"496825\",\r\n    \"accountType\": \"Ahorros\",\r\n    \"initialBalance\": 540.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567891\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/cuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:36:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountNumber\": \"496825\",\n    \"accountType\": \"Ahorros\",\n    \"initialBalance\": 540,\n    \"status\": true,\n    \"clientId\": \"1234567891\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Account 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"585545\",\r\n    \"accountType\": \"Corriente\",\r\n    \"initialBalance\": 1000.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Account 5",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"585545\",\r\n    \"accountType\": \"Corriente\",\r\n    \"initialBalance\": 1000.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567890\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/cuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:36:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountNumber\": \"585545\",\n    \"accountType\": \"Corriente\",\n    \"initialBalance\": 1000,\n    \"status\": true,\n    \"clientId\": \"1234567890\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Account 6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"585590\",\r\n    \"accountType\": \"Ahorros\",\r\n    \"initialBalance\": 5000.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567893\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Account 6",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"585590\",\r\n    \"accountType\": \"Ahorros\",\r\n    \"initialBalance\": 5000.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567893\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/cuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:39:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountNumber\": \"585590\",\n    \"accountType\": \"Ahorros\",\n    \"initialBalance\": 5000,\n    \"status\": true,\n    \"clientId\": \"1234567893\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Accounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Accounts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/cuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:39:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"accountNumber\": \"585545\",\n        \"accountType\": \"Corriente\",\n        \"initialBalance\": 1000,\n        \"status\": true,\n        \"clientId\": \"1234567890\"\n    },\n    {\n        \"accountNumber\": \"585590\",\n        \"accountType\": \"Ahorros\",\n        \"initialBalance\": 5000,\n        \"status\": true,\n        \"clientId\": \"1234567893\"\n    },\n    {\n        \"accountNumber\": \"478758\",\n        \"accountType\": \"Ahorros\",\n        \"initialBalance\": 2000,\n        \"status\": true,\n        \"clientId\": \"1234567890\"\n    },\n    {\n        \"accountNumber\": \"225487\",\n        \"accountType\": \"Corriente\",\n        \"initialBalance\": 100,\n        \"status\": true,\n        \"clientId\": \"1234567891\"\n    },\n    {\n        \"accountNumber\": \"495878\",\n        \"accountType\": \"Ahorros\",\n        \"initialBalance\": 100,\n        \"status\": true,\n        \"clientId\": \"1234567892\"\n    },\n    {\n        \"accountNumber\": \"496825\",\n        \"accountType\": \"Ahorros\",\n        \"initialBalance\": 540,\n        \"status\": true,\n        \"clientId\": \"1234567891\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Accounts by ClientId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/cuentas/cliente/1234567890",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas",
+								"cliente",
+								"1234567890"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Accounts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/cuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:39:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"accountNumber\": \"585545\",\n        \"accountType\": \"Corriente\",\n        \"initialBalance\": 1000,\n        \"status\": true,\n        \"clientId\": \"1234567890\"\n    },\n    {\n        \"accountNumber\": \"585590\",\n        \"accountType\": \"Ahorros\",\n        \"initialBalance\": 5000,\n        \"status\": true,\n        \"clientId\": \"1234567893\"\n    },\n    {\n        \"accountNumber\": \"478758\",\n        \"accountType\": \"Ahorros\",\n        \"initialBalance\": 2000,\n        \"status\": true,\n        \"clientId\": \"1234567890\"\n    },\n    {\n        \"accountNumber\": \"225487\",\n        \"accountType\": \"Corriente\",\n        \"initialBalance\": 100,\n        \"status\": true,\n        \"clientId\": \"1234567891\"\n    },\n    {\n        \"accountNumber\": \"495878\",\n        \"accountType\": \"Ahorros\",\n        \"initialBalance\": 100,\n        \"status\": true,\n        \"clientId\": \"1234567892\"\n    },\n    {\n        \"accountNumber\": \"496825\",\n        \"accountType\": \"Ahorros\",\n        \"initialBalance\": 540,\n        \"status\": true,\n        \"clientId\": \"1234567891\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Account by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/cuentas/478758",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas",
+								"478758"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Account by Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/cuentas/478758",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cuentas",
+										"478758"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:40:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountNumber\": \"478758\",\n    \"accountType\": \"Ahorros\",\n    \"initialBalance\": 2000,\n    \"status\": true,\n    \"clientId\": \"1234567890\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Account 6",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"585590\",\r\n    \"accountType\": \"Ahorros\",\r\n    \"initialBalance\": 7000.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567893\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/cuentas/585590",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas",
+								"585590"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Account 6",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"585590\",\r\n    \"accountType\": \"Ahorros\",\r\n    \"initialBalance\": 7000.0,\r\n    \"status\": true,\r\n    \"clientId\": \"1234567893\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/cuentas/585590",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cuentas",
+										"585590"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:41:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accountNumber\": \"585590\",\n    \"accountType\": \"Ahorros\",\n    \"initialBalance\": 7000,\n    \"status\": true,\n    \"clientId\": \"1234567893\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Account 6",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/cuentas/585590",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas",
+								"585590"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Account 6",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/cuentas/585590",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"cuentas",
+										"585590"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:41:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Save Transaction 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionDate\": \"2022-02-10\",\r\n    \"transactionType\": \"R\",\r\n    \"amount\": -575.0,\r\n    \"accountNumber\": \"478758\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Transaction 1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionDate\": \"2022-02-10\",\r\n    \"transactionType\": \"R\",\r\n    \"amount\": -575.0,\r\n    \"accountNumber\": \"478758\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/movimientos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:43:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"transactionDate\": \"2022-02-10\",\n    \"transactionType\": \"R\",\n    \"amount\": -575,\n    \"balance\": 1425,\n    \"accountNumber\": \"478758\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Transaction 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionDate\": \"2022-02-10\",\r\n    \"transactionType\": \"D\",\r\n    \"amount\": 600.0,\r\n    \"accountNumber\": \"225487\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Transaction 2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionDate\": \"2022-02-10\",\r\n    \"transactionType\": \"D\",\r\n    \"amount\": 600.0,\r\n    \"accountNumber\": \"225487\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/movimientos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:44:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"transactionDate\": \"2022-02-10\",\n    \"transactionType\": \"D\",\n    \"amount\": 600,\n    \"balance\": 700,\n    \"accountNumber\": \"225487\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Transaction 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionDate\": \"2022-02-10\",\r\n    \"transactionType\": \"D\",\r\n    \"amount\": 150.0,\r\n    \"accountNumber\": \"495878\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Transaction 3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionDate\": \"2022-02-10\",\r\n    \"transactionType\": \"D\",\r\n    \"amount\": 150.0,\r\n    \"accountNumber\": \"495878\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/movimientos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:44:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 8,\n    \"transactionDate\": \"2022-02-10\",\n    \"transactionType\": \"D\",\n    \"amount\": 150,\n    \"balance\": 250,\n    \"accountNumber\": \"495878\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Transaction 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionDate\": \"2022-02-08\",\r\n    \"transactionType\": \"R\",\r\n    \"amount\": -540.0,\r\n    \"accountNumber\": \"496825\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Transaction 4",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionDate\": \"2022-02-08\",\r\n    \"transactionType\": \"R\",\r\n    \"amount\": -540.0,\r\n    \"accountNumber\": \"496825\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/movimientos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:47:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "An error occurred: Saldo no disponible"
+						}
+					]
+				},
+				{
+					"name": "Save Transaction 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionDate\": \"2022-02-08\",\r\n    \"transactionType\": \"D\",\r\n    \"amount\": 400.0,\r\n    \"accountNumber\": \"496825\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Transaction 5",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionDate\": \"2022-02-08\",\r\n    \"transactionType\": \"D\",\r\n    \"amount\": 400.0,\r\n    \"accountNumber\": \"496825\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/movimientos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:48:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 14,\n    \"transactionDate\": \"2022-02-08\",\n    \"transactionType\": \"D\",\n    \"amount\": 400,\n    \"balance\": 800,\n    \"accountNumber\": \"496825\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Transaction 6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionDate\": \"2022-02-08\",\r\n    \"transactionType\": \"R\",\r\n    \"amount\": -540.0,\r\n    \"accountNumber\": \"496825\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Transaction 6",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionDate\": \"2022-02-08\",\r\n    \"transactionType\": \"R\",\r\n    \"amount\": -540.0,\r\n    \"accountNumber\": \"496825\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/movimientos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:48:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 15,\n    \"transactionDate\": \"2022-02-08\",\n    \"transactionType\": \"R\",\n    \"amount\": -540,\n    \"balance\": 260,\n    \"accountNumber\": \"496825\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Transaction 7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionType\": \"R\",\r\n    \"amount\": -500.0,\r\n    \"accountNumber\": \"585590\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Transaction 7",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionType\": \"R\",\r\n    \"amount\": -500.0,\r\n    \"accountNumber\": \"585590\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/movimientos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Oct 2024 19:24:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"transactionDate\": \"2024-10-26\",\n    \"transactionType\": \"R\",\n    \"amount\": -500,\n    \"balance\": 4000,\n    \"accountNumber\": \"585590\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Transactions",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/movimientos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:48:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 10,\n        \"transactionDate\": \"2022-02-10\",\n        \"transactionType\": \"R\",\n        \"amount\": -575,\n        \"balance\": 850,\n        \"accountNumber\": \"478758\"\n    },\n    {\n        \"id\": 11,\n        \"transactionDate\": \"2022-02-10\",\n        \"transactionType\": \"D\",\n        \"amount\": 600,\n        \"balance\": 1300,\n        \"accountNumber\": \"225487\"\n    },\n    {\n        \"id\": 12,\n        \"transactionDate\": \"2022-02-10\",\n        \"transactionType\": \"D\",\n        \"amount\": 150,\n        \"balance\": 400,\n        \"accountNumber\": \"495878\"\n    },\n    {\n        \"id\": 13,\n        \"transactionDate\": \"2022-02-08\",\n        \"transactionType\": \"D\",\n        \"amount\": 400,\n        \"balance\": 400,\n        \"accountNumber\": \"496825\"\n    },\n    {\n        \"id\": 14,\n        \"transactionDate\": \"2022-02-08\",\n        \"transactionType\": \"D\",\n        \"amount\": 400,\n        \"balance\": 800,\n        \"accountNumber\": \"496825\"\n    },\n    {\n        \"id\": 15,\n        \"transactionDate\": \"2022-02-08\",\n        \"transactionType\": \"R\",\n        \"amount\": -540,\n        \"balance\": 260,\n        \"accountNumber\": \"496825\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Transaction by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/movimientos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Transaction by Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/movimientos/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movimientos",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Oct 2024 16:23:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"transactionDate\": \"2022-02-10\",\n    \"transactionType\": \"R\",\n    \"amount\": -575,\n    \"balance\": 1425,\n    \"accountNumber\": \"478758\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Transaction 5",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionDate\": \"2022-02-08\",\r\n    \"transactionType\": \"D\",\r\n    \"amount\": 400.0,\r\n    \"accountNumber\": \"495878\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/movimientos/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Transaction 5",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionDate\": \"2022-02-08\",\r\n    \"transactionType\": \"D\",\r\n    \"amount\": 400.0,\r\n    \"accountNumber\": \"495878\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/movimientos/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movimientos",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Oct 2024 16:27:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"transactionDate\": \"2022-02-08\",\n    \"transactionType\": \"D\",\n    \"amount\": 400,\n    \"balance\": 650,\n    \"accountNumber\": \"495878\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Transaction 5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/movimientos/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos",
+								"15"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Transaction 5",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/movimientos/15",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"movimientos",
+										"15"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 21:51:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "Report Client 1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/accountstatementms/reportes?clientId=1234567890&startDate=2022-02-08&endDate=2022-02-10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"accountstatementms",
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "clientId",
+									"value": "1234567890"
+								},
+								{
+									"key": "startDate",
+									"value": "2022-02-08"
+								},
+								{
+									"key": "endDate",
+									"value": "2022-02-10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Report Client 1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8083/accountstatementms/reportes?clientId=1234567890&startDate=2022-02-08&endDate=2022-02-10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"accountstatementms",
+										"reportes"
+									],
+									"query": [
+										{
+											"key": "clientId",
+											"value": "1234567890"
+										},
+										{
+											"key": "startDate",
+											"value": "2022-02-08"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-02-10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Oct 2024 16:42:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"client\": {\n        \"identification\": \"1234567890\",\n        \"name\": \"Jose Lema\",\n        \"gender\": \"M\",\n        \"age\": 30,\n        \"address\": \"Otavalo sn y principal\",\n        \"phone\": \"098254785\",\n        \"clientId\": 1,\n        \"password\": \"1234\",\n        \"status\": true\n    },\n    \"accounts\": [\n        {\n            \"accountNumber\": \"585545\",\n            \"accountType\": \"Corriente\",\n            \"initialBalance\": 1000,\n            \"status\": true,\n            \"clientId\": \"1234567890\"\n        },\n        {\n            \"accountNumber\": \"478758\",\n            \"accountType\": \"Ahorros\",\n            \"initialBalance\": 1425,\n            \"status\": true,\n            \"clientId\": \"1234567890\"\n        }\n    ],\n    \"transactions\": [\n        {\n            \"id\": 1,\n            \"transactionDate\": \"2022-02-10\",\n            \"transactionType\": \"R\",\n            \"amount\": -575,\n            \"balance\": 1425,\n            \"accountNumber\": \"478758\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Report Client 2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/accountstatementms/reportes?clientId=1234567891&startDate=2022-02-08&endDate=2022-02-10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"accountstatementms",
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "clientId",
+									"value": "1234567891"
+								},
+								{
+									"key": "startDate",
+									"value": "2022-02-08"
+								},
+								{
+									"key": "endDate",
+									"value": "2022-02-10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Report Client 2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8083/accountstatementms/reportes?clientId=1234567891&startDate=2022-02-08&endDate=2022-02-10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"accountstatementms",
+										"reportes"
+									],
+									"query": [
+										{
+											"key": "clientId",
+											"value": "1234567891"
+										},
+										{
+											"key": "startDate",
+											"value": "2022-02-08"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-02-10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Oct 2024 16:44:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"client\": {\n        \"identification\": \"1234567891\",\n        \"name\": \"Marianela Montalvo\",\n        \"gender\": \"F\",\n        \"age\": 25,\n        \"address\": \"Amazonas y NNUU\",\n        \"phone\": \"097548965\",\n        \"clientId\": 2,\n        \"password\": \"5678\",\n        \"status\": true\n    },\n    \"accounts\": [\n        {\n            \"accountNumber\": \"225487\",\n            \"accountType\": \"Corriente\",\n            \"initialBalance\": 700,\n            \"status\": true,\n            \"clientId\": \"1234567891\"\n        },\n        {\n            \"accountNumber\": \"496825\",\n            \"accountType\": \"Ahorros\",\n            \"initialBalance\": 400,\n            \"status\": true,\n            \"clientId\": \"1234567891\"\n        }\n    ],\n    \"transactions\": [\n        {\n            \"id\": 2,\n            \"transactionDate\": \"2022-02-10\",\n            \"transactionType\": \"D\",\n            \"amount\": 600,\n            \"balance\": 700,\n            \"accountNumber\": \"225487\"\n        },\n        {\n            \"id\": 4,\n            \"transactionDate\": \"2022-02-08\",\n            \"transactionType\": \"R\",\n            \"amount\": -540,\n            \"balance\": 0,\n            \"accountNumber\": \"496825\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Report Client 3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/accountstatementms/reportes?clientId=1234567892&startDate=2022-02-08&endDate=2022-02-10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"accountstatementms",
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "clientId",
+									"value": "1234567892"
+								},
+								{
+									"key": "startDate",
+									"value": "2022-02-08"
+								},
+								{
+									"key": "endDate",
+									"value": "2022-02-10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Report Client 3",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8083/accountstatementms/reportes?clientId=1234567892&startDate=2022-02-08&endDate=2022-02-10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"accountstatementms",
+										"reportes"
+									],
+									"query": [
+										{
+											"key": "clientId",
+											"value": "1234567892"
+										},
+										{
+											"key": "startDate",
+											"value": "2022-02-08"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-02-10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Oct 2024 16:44:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"client\": {\n        \"identification\": \"1234567892\",\n        \"name\": \"Juan Osorio\",\n        \"gender\": \"M\",\n        \"age\": 53,\n        \"address\": \"13 junio y Equinoccial\",\n        \"phone\": \"098874587\",\n        \"clientId\": 3,\n        \"password\": \"1245\",\n        \"status\": true\n    },\n    \"accounts\": [\n        {\n            \"accountNumber\": \"495878\",\n            \"accountType\": \"Ahorros\",\n            \"initialBalance\": 650,\n            \"status\": true,\n            \"clientId\": \"1234567892\"\n        }\n    ],\n    \"transactions\": [\n        {\n            \"id\": 3,\n            \"transactionDate\": \"2022-02-10\",\n            \"transactionType\": \"D\",\n            \"amount\": 150,\n            \"balance\": 250,\n            \"accountNumber\": \"495878\"\n        },\n        {\n            \"id\": 5,\n            \"transactionDate\": \"2022-02-08\",\n            \"transactionType\": \"D\",\n            \"amount\": 400,\n            \"balance\": 650,\n            \"accountNumber\": \"495878\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Report Client 4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/accountstatementms/reportes?clientId=1234567893&startDate=2022-02-08&endDate=2024-10-26",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"accountstatementms",
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "clientId",
+									"value": "1234567893"
+								},
+								{
+									"key": "startDate",
+									"value": "2022-02-08"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-10-26"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Report Client 4",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8083/accountstatementms/reportes?clientId=1234567893&startDate=2022-02-08&endDate=2024-10-26",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"accountstatementms",
+										"reportes"
+									],
+									"query": [
+										{
+											"key": "clientId",
+											"value": "1234567893"
+										},
+										{
+											"key": "startDate",
+											"value": "2022-02-08"
+										},
+										{
+											"key": "endDate",
+											"value": "2024-10-26"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Oct 2024 19:26:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"client\": {\n        \"identification\": \"1234567893\",\n        \"name\": \"Eduardo Reyes\",\n        \"gender\": \"M\",\n        \"age\": 31,\n        \"address\": \"Ponceano Alto y Diego Vásquez de Cepeda\",\n        \"phone\": \"098874000\",\n        \"clientId\": 4,\n        \"password\": \"4567\",\n        \"status\": true\n    },\n    \"accounts\": [\n        {\n            \"accountNumber\": \"585590\",\n            \"accountType\": \"Ahorros\",\n            \"initialBalance\": 4000,\n            \"status\": true,\n            \"clientId\": \"1234567893\"\n        }\n    ],\n    \"transactions\": [\n        {\n            \"id\": 6,\n            \"transactionDate\": \"2024-10-26\",\n            \"transactionType\": \"R\",\n            \"amount\": -500,\n            \"balance\": 4500,\n            \"accountNumber\": \"585590\"\n        },\n        {\n            \"id\": 7,\n            \"transactionDate\": \"2024-10-26\",\n            \"transactionType\": \"R\",\n            \"amount\": -500,\n            \"balance\": 4000,\n            \"accountNumber\": \"585590\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
